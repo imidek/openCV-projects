@@ -5,8 +5,7 @@ red = (0,0,255)
 green = (0,255,0) 
 
 cam = cv2.VideoCapture(0)
-#selfie = fr.load_image_file('Put here path of your selfie')
-selfie = fr.load_image_file('C:/Users/kot/Documents/Python/faceReco/known/wojtekSelfie.jpg.jpg')
+selfie = fr.load_image_file('Put here path of your selfie')
 selfieLoc = fr.face_locations(selfie)[0]
 selfieEncode = fr.face_encodings(selfie)[0]
 knownEncodings = [selfieEncode]
